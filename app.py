@@ -54,14 +54,6 @@ def fetch_comments():
 def default():
     return redirect(url_for('page')), 302
 
-@app.route("/get-blogs")
-def get_blogs():
-    return "Not implemented yet", 400
-
-@app.route("/post-blogs", methods=["POST"])
-def post_blogs():
-    return "Not implemented yet", 400
-
 @app.route("/page", methods=["GET", "POST"])
 def page():
     blogform = BlogForm(request.form)
